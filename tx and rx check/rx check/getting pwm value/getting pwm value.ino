@@ -1,5 +1,4 @@
-
-const int ch1 = 2;
+const int ch1 = 4;
 int ch1pwm,mapch1pwm;
 void setup() {
 // put your setup code here, to run once:
@@ -10,7 +9,10 @@ Serial.begin(9600);
 void loop() {
 // put your main code here, to run repeatedly:
 ch1pwm = pulseIn(ch1,HIGH);
-mapch1pwm = map(ch1pwm,994,1981,0,254);
+Serial.println("channel 1:");
+Serial.println(ch1pwm);
+mapch1pwm = map(pulseIn(ch1,HIGH),993,1986,0,254);
+Serial.println("ch2 map:");
 Serial.println(mapch1pwm);
 delay(400);
 }

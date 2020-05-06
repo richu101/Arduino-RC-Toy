@@ -1,0 +1,6 @@
+{
+    "sketch": "tx and rx check\\motor check.ino",
+    "board": "arduino:avr:mega",
+    "configuration": "cpu=atmega2560",
+    "port": "COM11"
+}

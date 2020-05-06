@@ -1,4 +1,4 @@
-
+int ch1pwm,ch2pwm,ch3pwm,mapch1pwm;
 int front = 5;
 int rev = 6;
 int speed = 10;
